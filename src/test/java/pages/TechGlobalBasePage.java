@@ -1,10 +1,10 @@
 package pages;
 
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilitis.Driver;
+
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public class TechGlobalBasePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    // Common elements from the header and footer some other common elements
+    //Common elements from the header and footer and some other common elements
 
     @FindBy(id = "logo")
     public WebElement logo;
@@ -24,7 +24,4 @@ public class TechGlobalBasePage {
 
     @FindBy(css = "#dropdown-menu a")
     public List<WebElement> headerDropdownOptions;
-
-
-
 }

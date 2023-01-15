@@ -10,7 +10,6 @@ public class Driver {
 
     private static WebDriver driver;
 
-
     private Driver(){}
 
     public static WebDriver getDriver(){
@@ -21,8 +20,9 @@ public class Driver {
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
-        return  driver;
+        return driver;
     }
+
 
     public static void quitDriver(){
         if(driver != null){
@@ -30,7 +30,6 @@ public class Driver {
             driver.quit();
             driver = null;
         }
-
     }
 
 }

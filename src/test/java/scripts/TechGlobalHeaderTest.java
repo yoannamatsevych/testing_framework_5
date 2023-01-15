@@ -1,9 +1,9 @@
 package scripts;
 
-        import org.testng.Assert;
-        import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-public class TechGlobalHeaderTest extends TechGlobalBase {
+public class  TechGlobalHeaderTest extends TechGlobalBase {
 
     @Test(priority = 1)
     public void validateTechGlobalHeaderDropdown() {
