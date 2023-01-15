@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="TestSuite" time="1.227" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="TestSuite" time="5.778" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home/jre/lib"/>
@@ -64,7 +64,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="scripts.TechGlobalLogoTest" name="validateTechGlobalLogo" time="0.229"/>
-  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdown" time="0.303"/>
-  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdownOptions" time="0.695"/>
+  <testcase classname="scripts.TechGlobalFrontendTestingHomeTest" name="validateFrontendTestingCards" time="3.285"/>
+  <testcase classname="scripts.TechGlobalFrontendTestingHomeTest" name="validateFrontendTestingURL" time="1.197"/>
+  <testcase classname="scripts.TechGlobalLogoTest" name="validateTechGlobalLogo" time="0.272"/>
+  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdown" time="0.371"/>
+  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdownOptions" time="0.653"/>
 </testsuite>

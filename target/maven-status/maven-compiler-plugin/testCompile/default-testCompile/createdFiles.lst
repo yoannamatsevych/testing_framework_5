@@ -1,5 +1,12 @@
+testing_knowladge/_04_TestDescription.class
+testing_knowladge/_01_Annotations.class
+pages/TechGlobalFrontendTestingHomePage.class
 utilitis/Driver.class
+testing_knowladge/_02_Assertions.class
+scripts/TechGlobalFrontendTestingHomeTest.class
 pages/TechGlobalBasePage.class
+utilitis/Waiter.class
+testing_knowladge/_03_Priority_andDependency.class
 scripts/TechGlobalLogoTest.class
 scripts/TechGlobalBase.class
 scripts/TechGlobalHeaderTest.class
