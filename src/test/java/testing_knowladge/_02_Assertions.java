@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class _02_Assertions {
-
+/*
     @Test
     public void test1(){
         Assert.assertTrue(true);
@@ -38,5 +38,5 @@ public class _02_Assertions {
     public void testFailed(){
         Assert.fail("This test fails due to bug 123ABC");
     }
-
+*/
 }

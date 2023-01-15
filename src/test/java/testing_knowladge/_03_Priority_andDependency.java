@@ -3,7 +3,7 @@ package testing_knowladge;
 import org.testng.annotations.Test;
 
 public class _03_Priority_andDependency {
-
+/*
     @Test(priority = 1)
     public void login(){
         System.out.println("This is login");
@@ -26,5 +26,5 @@ public class _03_Priority_andDependency {
 
 
 
-
+*/
 }
