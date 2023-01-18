@@ -41,10 +41,14 @@ Calendar
     public void setPage(){
         techGlobalFrontendTestingHomePage = new TechGlobalFrontendTestingHomePage();
     }
+    // method which going to be executed after @Before Method on the Base page
+    // but before every @Test method in this Page...
+    // So we create the object in this method, to have the access to every instance variable, which we initialized in this class
+    // and then use it in the test method
 
     @Test(priority = 1, description = "Validates frontend testing cards")
     public void validateFrontendTestingCards(){
-        techGlobalFrontendTestingHomePage.getFrontendTestingPage();
+        techGlobalFrontendTestingHomePage.getFrontendTestingPage(); // method for getting to the given page
         String[] cardTexts = {"Locators",
                 "Xpath-CSS Locators",
                 "Dynamic Elements",
@@ -67,7 +71,7 @@ Calendar
                 "Calendar"};
 
         for (int i = 0; i < 20; i++) {
-            Assert.assertTrue(techGlobalFrontendTestingHomePage.cards.get(i).isDisplayed());
+            Assert.assertTrue(techGlobalFrontendTestingHomePage.cards.get(i).isDisplayed());// method of this classls
             Assert.assertEquals(techGlobalFrontendTestingHomePage.cards.get(i).getText(), cardTexts[i]);
         }
     }

@@ -4,15 +4,26 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.TechGlobalBasePage;
+import pages.TechGlobalDynamicElementsPage;
 import pages.TechGlobalFrontendTestingHomePage;
+import pages.TechGlobalWaitsPage;
 import utilitis.Driver;
 
 public class TechGlobalBase {
+
+    // initializing the instance variable which we going to use in this class
     WebDriver driver;
     TechGlobalBasePage techGlobalBasePage;
 
     TechGlobalFrontendTestingHomePage techGlobalFrontendTestingHomePage;
 
+    TechGlobalDynamicElementsPage techGlobalDynamicElementsPage;
+
+    TechGlobalWaitsPage techGlobalWaitsPage;
+
+
+    // before and after methods which will be executed each time when @Test annotation will use in all child classes
+    // Then we do not need to write before end after method in each testing class
     @BeforeMethod
     public void setup() {
         driver = Driver.getDriver();
