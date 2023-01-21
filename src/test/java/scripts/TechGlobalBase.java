@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.*;
-import utilitis.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class TechGlobalBase {
 
@@ -28,7 +29,7 @@ public class TechGlobalBase {
     @BeforeMethod
     public void setup() {
         driver = Driver.getDriver();
-        driver.get("https://techglobal-training.netlify.app/");
+        driver.get(ConfigReader.getProperty("appURL"));
 
         techGlobalBasePage = new TechGlobalBasePage();
     }

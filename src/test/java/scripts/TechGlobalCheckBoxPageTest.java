@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalCheckBoxPage;
 import pages.TechGlobalFrontendTestingHomePage;
-import utilitis.Waiter;
+import utilities.Waiter;
 
 public class TechGlobalCheckBoxPageTest extends TechGlobalBase{
 

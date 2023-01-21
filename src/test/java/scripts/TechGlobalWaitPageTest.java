@@ -1,18 +1,11 @@
 package scripts;
 
-import com.google.common.cache.Weigher;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalWaitsPage;
-import utilitis.Driver;
-import utilitis.Waiter;
-
-import java.io.Writer;
+import utilities.Waiter;
 
 public class TechGlobalWaitPageTest extends TechGlobalBase{
 
