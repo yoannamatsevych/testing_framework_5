@@ -12,16 +12,13 @@ public class TechGlobalBase {
     // initializing the instance variable which we going to use in this class
     WebDriver driver;
     TechGlobalBasePage techGlobalBasePage;
-
     TechGlobalFrontendTestingHomePage techGlobalFrontendTestingHomePage;
-
     TechGlobalDynamicElementsPage techGlobalDynamicElementsPage;
-
     TechGlobalWaitsPage techGlobalWaitsPage;
-
     TechGlobalRadioButtonPage techGlobalRadioButtonPage;
-
     TechGlobalCheckBoxPage techGlobalCheckBoxPage;
+    TechGlobalDropdownPage techGlobalDropdownPage;
+    TechGlobalMultipleWindowsPage techGlobalMultipleWindowsPage;
 
 
     // before and after methods which will be executed each time when @Test annotation will use in all child classes
