@@ -1,6 +1,4 @@
-package testing_knowladge;
-
-import org.testng.annotations.*;
+package testng_knowledge;
 
 public class _01_Annotations {
 /*

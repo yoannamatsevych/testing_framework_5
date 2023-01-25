@@ -8,7 +8,7 @@ public class TechGlobalLogoTest extends TechGlobalBase {
 
     //extended to the TechGlobalBase so we van use its before and after method
 
-    @Test
+    @Test()
     public void validateTechGlobalLogo() {
         Waiter.waitForVisibilityOfElement(techGlobalBasePage.logo, 30);
         Assert.assertTrue(techGlobalBasePage.logo.isDisplayed());

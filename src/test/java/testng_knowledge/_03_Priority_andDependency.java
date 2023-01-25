@@ -1,6 +1,4 @@
-package testing_knowladge;
-
-import org.testng.annotations.Test;
+package testng_knowledge;
 
 public class _03_Priority_andDependency {
 /*

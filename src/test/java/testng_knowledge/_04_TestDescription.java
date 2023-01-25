@@ -1,7 +1,4 @@
-package testing_knowladge;
-
-import org.testng.annotations.Ignore;
-import org.testng.annotations.Test;
+package testng_knowledge;
 
 public class _04_TestDescription {
 /*
