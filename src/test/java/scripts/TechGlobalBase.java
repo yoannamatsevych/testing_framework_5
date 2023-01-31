@@ -23,6 +23,13 @@ public class TechGlobalBase {
     TechGlobalMultipleWindowsPage techGlobalMultipleWindowsPage;
     TechGlobalAlertsPage techGlobalAlertsPage;
     TechGlobalDynamicTablesPage techGlobalDynamicTablesPage;
+    TechGlobalIFramesPage techGlobalIFramesPage;
+    TechGlobalFileUploadPage techGlobalFileUploadPage;
+    TechGlobalFileDownloadPage techGlobalFileDownloadPage;
+    TechGlobalStaticTablesPages techGlobalStaticTablesPages;
+
+    TechGlobalCalendarPage techGlobalCalendarPage;
+    TechGlobalSortableTablePage techGlobalSortableTablePage;
 
 
     // before and after methods which will be executed each time when @Test annotation will use in all child classes
