@@ -6,9 +6,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalDynamicTablesPage;
 import pages.TechGlobalFrontendTestingHomePage;
-import utilities.TableData;
+import utilities.TableHandler;
 import utilities.TextHandler;
-import utilities.Waiter;
 
 import java.util.List;
 import java.util.stream.IntStream;
@@ -61,6 +60,7 @@ public class TechGlobalDynamicTablesTest extends TechGlobalBase{
         // store the current total amount before adding a new product and parse it to an int
         int initialTotal = TextHandler.getInt(techGlobalDynamicTablesPage.totalAmount.getText());
 
+
         //validate that the modal card is displayed by its title
         Assert.assertEquals(techGlobalDynamicTablesPage.modelCard.getText(), "Add New Product" );
 
@@ -85,14 +85,15 @@ public class TechGlobalDynamicTablesTest extends TechGlobalBase{
         Assert.assertEquals(techGlobalDynamicTablesPage.tableRow.size(), tableRowSize + 1);
 
         // get the total amount og the newly added product from the table
-        int productTotalAmount = TextHandler.getInt(TableData.getTableRow(driver, 4).get(3).getText());
+        int productTotalAmount = TextHandler.getInt(TableHandler.getTableRow(driver, 4).get(3).getText());
 
         // get the row of the table that we need to check
-        List<WebElement> tableRow = TableData.getTableRow(driver, 4);
+        List<WebElement> tableRow = TableHandler.getTableRow(driver, 4);
+
 
         //validate that the values in the table match the values from the product array
-        IntStream.range(0, tableRow.size()-1).forEach(i ->
-                Assert.assertEquals(tableRow.get(i).getText(), products[i]));
+        IntStream.range(0, products.length).forEach(i ->
+                Assert.assertEquals(TableHandler.getRowCell(techGlobalDynamicTablesPage.table, 3, i).getText(), products[i]));
 
         // Also, validate that the total amount of the newly added product matches the calculated value
         Assert.assertEquals(productTotalAmount, myProductTotal);

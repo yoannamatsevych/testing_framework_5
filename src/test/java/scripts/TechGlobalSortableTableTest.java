@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalSortableTablePage;
-import utilities.TableData;
+import utilities.TableHandler;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,7 @@ public class TechGlobalSortableTableTest extends TechGlobalBase{
     public void validateSortAscByQuantity(){
         techGlobalSortableTablePage.ascByQuantity.click();
 
-        List<WebElement> quantityColumnElements = TableData.getTableColumn(driver, 1);
+        List<WebElement> quantityColumnElements = TableHandler.getTableColumn(driver, 1);
         List<Integer> quantityColumn = new ArrayList<>();
 
         for (WebElement element : quantityColumnElements) {
@@ -61,7 +61,7 @@ Verify that the Quantity column of the table is sorted in descending order
     public void validateSortDescByQuantity(){
         techGlobalSortableTablePage.descByQuantity.click();
 
-        List<WebElement> quantityColumnElements = TableData.getTableColumn(driver, 1);
+        List<WebElement> quantityColumnElements = TableHandler.getTableColumn(driver, 1);
         List<Integer> quantityColumn = new ArrayList<>();
 
         for (WebElement element : quantityColumnElements) {
@@ -87,7 +87,7 @@ Verify that the Price column of the table is sorted in ascending order*/
     public void validateSortAscByPrice(){
         techGlobalSortableTablePage.ascByPrice.click();
 
-        List<WebElement> priceColumnElements = TableData.getTableColumn(driver, 3);
+        List<WebElement> priceColumnElements = TableHandler.getTableColumn(driver, 3);
         List<Integer> priceColumn = new ArrayList<>();
 
         for (WebElement element : priceColumnElements) {
@@ -113,7 +113,7 @@ Verify that the Price column of the table is sorted in descending order
     public void validateSortDescByPrice(){
         techGlobalSortableTablePage.descByPrice.click();
 
-        List<WebElement> priceColumnElements = TableData.getTableColumn(driver, 3);
+        List<WebElement> priceColumnElements = TableHandler.getTableColumn(driver, 3);
         List<Integer> priceColumn = new ArrayList<>();
 
         for (WebElement element : priceColumnElements) {
